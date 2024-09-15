@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0x3enxvftkvw"
-path="res://.godot/imported/transparentDark23.png-3cf1bad7bf8d0e6d71c350f0a9390d19.ctex"
+uid="uid://cs3nh5dkkoffg"
+path="res://.godot/imported/joviscab_logo.png-c363a82ef3ef2a2b7b13a81c92ab9af6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/transparentDark23.png"
-dest_files=["res://.godot/imported/transparentDark23.png-3cf1bad7bf8d0e6d71c350f0a9390d19.ctex"]
+source_file="res://images/joviscab_logo.png"
+dest_files=["res://.godot/imported/joviscab_logo.png-c363a82ef3ef2a2b7b13a81c92ab9af6.ctex"]
 
 [params]
 

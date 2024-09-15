@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csomia7xy8yi0"
-path="res://.godot/imported/Bone.png-c332517c94f2f6e96c397268705fac7b.ctex"
+uid="uid://cum6isor0sh4f"
+path="res://.godot/imported/paw.svg-aaa48eb986faa2e699e1e7752262f355.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Bone.png"
-dest_files=["res://.godot/imported/Bone.png-c332517c94f2f6e96c397268705fac7b.ctex"]
+source_file="res://images/paw.svg"
+dest_files=["res://.godot/imported/paw.svg-aaa48eb986faa2e699e1e7752262f355.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

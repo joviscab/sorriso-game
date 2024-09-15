@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://bvcbc023ma46b"]
 
-[ext_resource type="Script" path="res://scenes/main_character.gd" id="1_uy36g"]
-[ext_resource type="Texture2D" uid="uid://hnm4r5vx08tp" path="res://dog.png" id="2_4knwe"]
+[ext_resource type="Script" path="res://scripts/main_character.gd" id="1_uy36g"]
+[ext_resource type="Texture2D" uid="uid://hnm4r5vx08tp" path="res://images/dog.png" id="2_4knwe"]
 [ext_resource type="AudioStream" uid="uid://c6jsa0x1ippjm" path="res://audio/dog_breathing.mp3" id="3_ny030"]
 [ext_resource type="AudioStream" uid="uid://b54a0hwybv5gv" path="res://audio/dog-bark.mp3" id="4_57gku"]
 

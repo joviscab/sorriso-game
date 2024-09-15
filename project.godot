@@ -14,8 +14,8 @@ config/name="Sorriso Game"
 config/version="0.2"
 run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-boot_splash/image="res://joviscab_logo.png"
-config/icon="res://paw.svg"
+boot_splash/image="res://images/joviscab_logo.png"
+config/icon="res://images/paw.svg"
 
 [display]
 

@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://bmryop0o0r7uu"]
 
-[ext_resource type="Texture2D" uid="uid://cffecujvoeuxy" path="res://scenes/transparentDark22.png" id="1_0848f"]
-[ext_resource type="Script" path="res://scenes/touch_controls.gd" id="1_ti3bv"]
-[ext_resource type="Texture2D" uid="uid://0x3enxvftkvw" path="res://scenes/transparentDark23.png" id="2_i71c6"]
-[ext_resource type="Texture2D" uid="uid://h1xli6mlrt3d" path="res://scenes/transparentDark24.png" id="3_c6tuv"]
+[ext_resource type="Texture2D" uid="uid://cffecujvoeuxy" path="res://images/transparentDark22.png" id="1_0848f"]
+[ext_resource type="Script" path="res://scripts/touch_controls.gd" id="1_ti3bv"]
+[ext_resource type="Texture2D" uid="uid://0x3enxvftkvw" path="res://images/transparentDark23.png" id="2_i71c6"]
+[ext_resource type="Texture2D" uid="uid://h1xli6mlrt3d" path="res://images/transparentDark24.png" id="3_c6tuv"]
 
 [node name="TouchControls" type="CanvasLayer"]
 script = ExtResource("1_ti3bv")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cffecujvoeuxy"
-path="res://.godot/imported/transparentDark22.png-a244f8668f20c8b5ef600c257a021259.ctex"
+uid="uid://0x3enxvftkvw"
+path="res://.godot/imported/transparentDark23.png-439b1f47566c5580df7cd86bbd474446.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/transparentDark22.png"
-dest_files=["res://.godot/imported/transparentDark22.png-a244f8668f20c8b5ef600c257a021259.ctex"]
+source_file="res://images/transparentDark23.png"
+dest_files=["res://.godot/imported/transparentDark23.png-439b1f47566c5580df7cd86bbd474446.ctex"]
 
 [params]
 

@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://ycdr8xchcy7w"]
 
-[ext_resource type="Texture2D" uid="uid://v581piq4e5rm" path="res://scenes/logo.png" id="1_bvc4k"]
-[ext_resource type="Texture2D" uid="uid://ck2a4pkkwc1uk" path="res://scenes/Brown.png" id="1_dnome"]
-[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_okaum"]
+[ext_resource type="Texture2D" uid="uid://v581piq4e5rm" path="res://images/logo.png" id="1_bvc4k"]
+[ext_resource type="Texture2D" uid="uid://ck2a4pkkwc1uk" path="res://images/Brown.png" id="1_dnome"]
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_okaum"]
 [ext_resource type="AudioStream" uid="uid://b54a0hwybv5gv" path="res://audio/dog-bark.mp3" id="4_ykom6"]
 [ext_resource type="AudioStream" uid="uid://dnbw7butr5rwn" path="res://audio/dog_theme.mp3" id="5_k3u0k"]
 
@@ -46,7 +46,7 @@ offset_bottom = 88.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
-text = "New Game"
+text = "Start Game"
 
 [node name="dog_bark" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_ykom6")
