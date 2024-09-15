@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvht36ddmfe6c"]
+
+[ext_resource type="Texture2D" uid="uid://csomia7xy8yi0" path="res://scenes/Bone.png" id="1_v876l"]
+[ext_resource type="Script" path="res://scenes/finish.gd" id="1_xfmwv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ip8rt"]
+radius = 20.025
+
+[node name="Finish" type="Area2D"]
+texture_filter = 1
+position = Vector2(34, 116)
+script = ExtResource("1_xfmwv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.00003, 7.99991)
+rotation = -1.58263
+scale = Vector2(1.48503, 1.39356)
+texture = ExtResource("1_v876l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 6)
+shape = SubResource("CircleShape2D_ip8rt")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

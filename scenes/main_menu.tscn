@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://ycdr8xchcy7w"]
+
+[ext_resource type="Texture2D" uid="uid://v581piq4e5rm" path="res://scenes/logo.png" id="1_bvc4k"]
+[ext_resource type="Texture2D" uid="uid://ck2a4pkkwc1uk" path="res://scenes/Brown.png" id="1_dnome"]
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_okaum"]
+[ext_resource type="AudioStream" uid="uid://b54a0hwybv5gv" path="res://audio/dog-bark.mp3" id="4_ykom6"]
+[ext_resource type="AudioStream" uid="uid://dnbw7butr5rwn" path="res://audio/dog_theme.mp3" id="5_k3u0k"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_okaum")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_dnome")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -424.0
+offset_top = -158.0
+offset_right = 424.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bvc4k")
+
+[node name="New Game" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -89.0
+offset_top = 27.0
+offset_right = 95.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "New Game"
+
+[node name="dog_bark" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ykom6")
+pitch_scale = 0.92
+
+[node name="main_theme" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_k3u0k")
+autoplay = true
+
+[connection signal="pressed" from="New Game" to="." method="_on_new_game_pressed"]
