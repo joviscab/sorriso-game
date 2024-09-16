@@ -7,6 +7,8 @@ const JUMP_VELOCITY = -900.0
 @onready var dog_breathing: AudioStreamPlayer2D = $dog_breathing
 @onready var dog_jump: AudioStreamPlayer2D = $dog_jump
 
+func jump():
+	velocity.y = JUMP_VELOCITY
 
 func _physics_process(delta: float) -> void:
 	# Animations

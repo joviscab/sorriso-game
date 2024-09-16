@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://ds6xk25adehm7"]
+
+[ext_resource type="Texture2D" uid="uid://cotjbie28msgb" path="res://images/IdleEnemy.png" id="1_p37j8"]
+[ext_resource type="Script" path="res://scenes/urubu.gd" id="2_krlx3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k42kp"]
+atlas = ExtResource("1_p37j8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8p5en"]
+atlas = ExtResource("1_p37j8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i38e1"]
+atlas = ExtResource("1_p37j8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dbkb8"]
+atlas = ExtResource("1_p37j8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d6iah"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k42kp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8p5en")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i38e1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dbkb8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1femc"]
+size = Vector2(46, 41.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v16vd"]
+size = Vector2(50, 45)
+
+[node name="Urubu" type="RigidBody2D"]
+position = Vector2(18, 17)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(14.4999, -19.5)
+scale = Vector2(2.53125, 2.53125)
+sprite_frames = SubResource("SpriteFrames_d6iah")
+autoplay = "default"
+frame_progress = 0.361887
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10.4999, 0.499969)
+shape = SubResource("RectangleShape2D_1femc")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(10.4999, 0.499969)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_v16vd")
+script = ExtResource("2_krlx3")
+
+[connection signal="body_entered" from="Area2D" to="Area2D/CollisionShape2D" method="_on_area_2d_body_entered"]

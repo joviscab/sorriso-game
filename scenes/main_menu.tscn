@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://ycdr8xchcy7w"]
+[gd_scene load_steps=17 format=3 uid="uid://ycdr8xchcy7w"]
 
 [ext_resource type="Texture2D" uid="uid://v581piq4e5rm" path="res://images/logo.png" id="1_bvc4k"]
 [ext_resource type="Texture2D" uid="uid://ck2a4pkkwc1uk" path="res://images/Brown.png" id="1_dnome"]
@@ -6,105 +6,13 @@
 [ext_resource type="Shader" path="res://scenes/main_menu.gdshader" id="2_ykpcc"]
 [ext_resource type="AudioStream" uid="uid://b54a0hwybv5gv" path="res://audio/dog-bark.mp3" id="4_ykom6"]
 [ext_resource type="AudioStream" uid="uid://dnbw7butr5rwn" path="res://audio/dog_theme.mp3" id="5_k3u0k"]
-[ext_resource type="Script" path="res://scripts/logo.gd" id="6_6wltr"]
-[ext_resource type="Texture2D" uid="uid://hnm4r5vx08tp" path="res://images/dog.png" id="7_o0muf"]
+[ext_resource type="Texture2D" uid="uid://c6ks1cj7hrep4" path="res://images/Attack.png" id="8_wa6v1"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_mag5w"]
 shader = ExtResource("2_ykpcc")
 
-[sub_resource type="Animation" id="Animation_2hbp5"]
+[sub_resource type="Animation" id="Animation_1kpu8"]
 length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect:size")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(848, 153)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(18, 118)]
-}
-
-[sub_resource type="Animation" id="Animation_ojopy"]
-resource_name = "logo"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect:size")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(848, 153), Vector2(942, 170), Vector2(1060, 191)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("TextureRect:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(155, 166), Vector2(105, 147), Vector2(48, 129)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_p3g4q"]
-_data = {
-"RESET": SubResource("Animation_2hbp5"),
-"logo": SubResource("Animation_ojopy")
-}
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b81x2"]
-atlas = ExtResource("7_o0muf")
-region = Rect2(0, 0, 161, 165)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k5f3o"]
-atlas = ExtResource("7_o0muf")
-region = Rect2(161, 0, 161, 165)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_msrid"]
-atlas = ExtResource("7_o0muf")
-region = Rect2(322, 0, 161, 165)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_hvym8"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_b81x2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k5f3o")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_msrid")
-}],
-"loop": true,
-"name": &"default",
-"speed": 8.0
-}]
-
-[sub_resource type="Animation" id="Animation_3sa2h"]
-resource_name = "background"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -142,8 +50,8 @@ tracks/2/keys = {
 "values": [Vector2(1152, 648)]
 }
 
-[sub_resource type="Animation" id="Animation_1kpu8"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_3sa2h"]
+resource_name = "background"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -187,6 +95,42 @@ _data = {
 "background": SubResource("Animation_3sa2h")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_84kpp"]
+atlas = ExtResource("8_wa6v1")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_itt14"]
+atlas = ExtResource("8_wa6v1")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drfhf"]
+atlas = ExtResource("8_wa6v1")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipno7"]
+atlas = ExtResource("8_wa6v1")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hvym8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84kpp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_itt14")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_drfhf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipno7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 11.0
+}]
+
 [node name="MainMenu" type="Node"]
 script = ExtResource("1_okaum")
 
@@ -204,29 +148,28 @@ stretch_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
-anchors_preset = 8
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -558.0
-offset_top = -206.0
-offset_right = 290.0
-offset_bottom = -53.0
+offset_left = -424.0
+offset_right = 424.0
+offset_bottom = 153.0
 grow_horizontal = 2
-grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
 texture = ExtResource("1_bvc4k")
 
 [node name="New Game" type="Button" parent="."]
+texture_filter = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -89.0
-offset_top = 46.0
-offset_right = 95.0
-offset_bottom = 107.0
+offset_left = -153.0
+offset_top = -51.0
+offset_right = 153.0
+offset_bottom = 51.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
@@ -240,23 +183,27 @@ pitch_scale = 0.92
 stream = ExtResource("5_k3u0k")
 autoplay = true
 
-[node name="logo" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_p3g4q")
-}
-script = ExtResource("6_6wltr")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
-position = Vector2(583, 522)
-scale = Vector2(0.872671, 0.872671)
-sprite_frames = SubResource("SpriteFrames_hvym8")
-autoplay = "default"
-frame_progress = 0.866547
-
 [node name="background" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_bywa1")
 }
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Control"]
+texture_filter = 1
+position = Vector2(29, -82)
+scale = Vector2(3.79109, 3.48877)
+sprite_frames = SubResource("SpriteFrames_hvym8")
+autoplay = "default"
+frame_progress = 0.375506
 
 [connection signal="pressed" from="New Game" to="." method="_on_new_game_pressed"]
