@@ -17,7 +17,7 @@ func _on_area_2d_body_entered(body):
 		else:
 			print("Enemy node not found")
 		
-		if y_delta > 30:  # Player is above the enemy
+		if y_delta < 97:  # Player is above the enemy
 			print("Destroy enemy")
 			if enemy:
 				enemy.queue_free()  # Destroy the entire enemy (including the sprite)

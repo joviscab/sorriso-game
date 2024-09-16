@@ -1,7 +1,24 @@
-[gd_scene load_steps=10 format=3 uid="uid://ds6xk25adehm7"]
+[gd_scene load_steps=15 format=3 uid="uid://ds6xk25adehm7"]
 
 [ext_resource type="Texture2D" uid="uid://cotjbie28msgb" path="res://images/IdleEnemy.png" id="1_p37j8"]
+[ext_resource type="Texture2D" uid="uid://p1vyicbhihp5" path="res://images/DeathEnemy.png" id="1_r1sw3"]
 [ext_resource type="Script" path="res://scenes/urubu.gd" id="2_krlx3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w88hw"]
+atlas = ExtResource("1_r1sw3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_six7b"]
+atlas = ExtResource("1_r1sw3")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khy20"]
+atlas = ExtResource("1_r1sw3")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dhvo"]
+atlas = ExtResource("1_r1sw3")
+region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k42kp"]
 atlas = ExtResource("1_p37j8")
@@ -23,6 +40,23 @@ region = Rect2(96, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_w88hw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_six7b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khy20")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dhvo")
+}],
+"loop": true,
+"name": &"death",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_k42kp")
 }, {
 "duration": 1.0,
@@ -35,7 +69,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_dbkb8")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 8.0
 }]
 
@@ -53,8 +87,10 @@ texture_filter = 1
 position = Vector2(14.4999, -19.5)
 scale = Vector2(2.53125, 2.53125)
 sprite_frames = SubResource("SpriteFrames_d6iah")
-autoplay = "default"
-frame_progress = 0.361887
+animation = &"death"
+autoplay = "idle"
+frame = 3
+frame_progress = 0.154768
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(10.4999, 0.499969)
