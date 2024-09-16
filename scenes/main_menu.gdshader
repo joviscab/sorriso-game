@@ -5,4 +5,3 @@ void fragment() {
 	pos.x = pos.x + TIME * -0.50;
 	COLOR = texture(TEXTURE, pos);
 }
-    

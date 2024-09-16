@@ -1,5 +1,7 @@
 extends CollisionShape2D
 
+@onready var urubu: RigidBody2D = $"../.."
+
 func _on_area_2d_body_entered(body):
 	if body.name == "CharacterBody2D":
 		var y_delta = body.global_position.y - global_position.y  # Compare global positions
@@ -26,3 +28,4 @@ func _on_area_2d_body_entered(body):
 			print("Kill player")
 			body.queue_free()  # Kill the player
 			get_tree().reload_current_scene()
+			
