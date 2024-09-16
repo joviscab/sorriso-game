@@ -6,7 +6,7 @@ Hello, my name is Joviscab and this is part of my learning to code journey!
 
 This is the first game that I am trying to make using Godot. In this project I am going to build a 2d platform game!
 
-[Link to the live project](https://joviscab.github.io/)
+[Link to the live project](https://joviscab.github.io/sorriso-game/)
 
 ## Skills
 
