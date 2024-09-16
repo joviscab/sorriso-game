@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dx34icfhssjib"]
 
-[ext_resource type="Script" path="res://scenes/mid_menu.gd" id="1_6mcj1"]
+[ext_resource type="Script" path="res://scripts/mid_menu.gd" id="1_6mcj1"]
 [ext_resource type="Texture2D" uid="uid://ck2a4pkkwc1uk" path="res://images/Brown.png" id="2_hqvdm"]
 [ext_resource type="Texture2D" uid="uid://v581piq4e5rm" path="res://images/logo.png" id="3_vkarn"]
 [ext_resource type="AudioStream" uid="uid://b54a0hwybv5gv" path="res://audio/dog-bark.mp3" id="4_8i3wv"]
