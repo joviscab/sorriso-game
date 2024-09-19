@@ -9,4 +9,4 @@ func add_point():
 	collect.play()
 	points += 1
 	print(points)
-	points_label.text = "Piñas: " + str(points)
+	points_label.text = "Coins: " + str(points)
