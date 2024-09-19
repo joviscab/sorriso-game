@@ -11,4 +11,4 @@ func _on_main_menu_pressed() -> void:
 func _on_next_level_pressed() -> void:
 	dog_bark.play()
 	await get_tree().create_timer(0.5).timeout
-	get_tree().change_scene_to_file("res://scenes/level_1.tscn")
+	get_tree().change_scene_to_file("res://scenes/level_2.tscn")
