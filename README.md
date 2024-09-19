@@ -8,6 +8,10 @@ This is the first game that I am trying to make using Godot. In this project I a
 
 [Link to the live project](https://joviscab.github.io/sorriso-game/)
 
+[Link to the last apk release for Android](https://github.com/joviscab/sorriso-game/blob/main/last%20release/Sorriso%20Game0.3.apk)
+
+
+
 ## Skills
 
 With this project my idea is to learn the very basics of Gdscript and Godot!
